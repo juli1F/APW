@@ -1,0 +1,14 @@
+import express= from 'express'
+import path fromfrom 'path'
+import Crud from 'grude.js'
+
+const app= express()
+const port= 3000
+
+app.get('/', (res,req)=>{
+
+})
+
+app.listen(port, ()=> {
+    console.log(`http://localost:${port}`)
+})

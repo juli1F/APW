@@ -1,0 +1,18 @@
+import mysql from 'mysql12'
+
+export async function connection(){
+         try{
+         const connection= await mysql.CreateConnection({
+                host :'localost',
+                user:'root',
+                password:'',
+                database:'dados'
+      })
+
+                ruturn connection
+
+      }catch (error) {
+         console.error('Erro de conexão')
+         throw error
+      }
+}
